@@ -35,9 +35,9 @@ namespace CSFizzBuzz.Library.tests
         }
 
         [Test]
-        public void FizzBuzz_When5_ReturnsBuzz()
+        public void FizzBuzz_When5_ReturnsBuzz(
+            [Values(5)] int input)
         {
-            int input = 5;
             string output = FizzBuzz.GetValue(input);
             Assert.AreEqual("Buzz", output);
         }
