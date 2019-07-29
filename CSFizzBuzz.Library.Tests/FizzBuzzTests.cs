@@ -27,11 +27,19 @@ namespace CSFizzBuzz.Library.tests
         }
 
         [Test]
-        public void FizzBuzz_WhenMulipleOf3_ReturnsFizz(
+        public void FizzBuzz_WhenDivisibleBy3_ReturnsFizz(
             [Values(3, 6, 9)] int input)
         {
             string output = FizzBuzz.GetValue(input);
             Assert.AreEqual("Fizz", output);
+        }
+
+        [Test]
+        public void FizzBuzz_When5_ReturnsBuzz()
+        {
+            int input = 5;
+            string output = FizzBuzz.GetValue(input);
+            Assert.AreEqual("Buzz", output);
         }
     }
 }
