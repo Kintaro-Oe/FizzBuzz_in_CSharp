@@ -1,17 +1,10 @@
-//using CSFizzBuzz.Library;
 using NUnit.Framework;
 
-//namespace Tests
 namespace CSFizzBuzz.Library.tests
 
 {
     public class FizzBuzzTests
     {
-        //[SetUp]
-        //public void Setup()
-        //{
-        //}
-
         [Test]
         public void FizzBuzz_When1_Returns1()
         {
@@ -37,6 +30,14 @@ namespace CSFizzBuzz.Library.tests
         public void FizzBuzz_When3_ReturnsFizz()
         {
             int input = 3;
+            string output = FizzBuzz.GetValue(input);
+            Assert.AreEqual("Fizz", output);
+        }
+
+        [Test]
+        public void FizzBuzz_WhenMulipleOf3_ReturnsFizz()
+        {
+            int input = 6;
             string output = FizzBuzz.GetValue(input);
             Assert.AreEqual("Fizz", output);
         }
