@@ -1,4 +1,5 @@
 ﻿using System;
+using CSFizzBuzz.Library;
 
 namespace CSFizzBuzz
 {
@@ -8,7 +9,7 @@ namespace CSFizzBuzz
         {
             for (int i = 1; i <= 100; i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(FizzBuzz.GetValue(i));
             }
         }
     }
