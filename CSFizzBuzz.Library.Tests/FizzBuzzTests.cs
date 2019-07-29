@@ -41,5 +41,13 @@ namespace CSFizzBuzz.Library.tests
             string output = FizzBuzz.GetValue(input);
             Assert.AreEqual("Buzz", output);
         }
+
+        [Test]
+        public void FizzBuzz_WhenDivisibleBy3And5_ReturnsFizzBuzz(
+            [Values(15, 30)] int input)
+        {
+            string output = FizzBuzz.GetValue(input);
+            Assert.AreEqual("FizzBuzz", output);
+        }
     }
 }

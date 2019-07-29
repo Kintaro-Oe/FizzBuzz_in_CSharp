@@ -6,7 +6,11 @@ namespace CSFizzBuzz.Library
     {
         public static string GetValue(int input)
         {
-            if (input % 3 == 0)
+            if (input % 15 == 0)
+            {
+                return "FizzBuzz";
+            }
+            else if (input % 3 == 0)
             {
                 return "Fizz";
             }
