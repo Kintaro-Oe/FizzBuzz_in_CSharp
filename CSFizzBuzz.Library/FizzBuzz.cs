@@ -6,7 +6,12 @@ namespace CSFizzBuzz.Library
     {
         public static string GetValue(int input)
         {
-            return "1";
+            if (input == 3)
+            {
+                return "Fizz";
+            }
+
+            return input.ToString();
         }
     }
 }
