@@ -21,3 +21,19 @@ If divisible by 3 and 5 replace with “FizzBuzz”
 ## Run the test
 - Build (or Rebuild) the program
 - Under Unit tests, click "Run All"
+
+## Troubleshooting
+If the test project is greyed out or “unavailable”,  you may need to remove the test project and re-add it to the solution 
+
+**Removal**
+
+- Ctrl+click on the greyed out “CSFizzBuzz.Library.Tests” project 
+- Then select “delete”
+
+**Adding**
+
+- Ctrl+click on the main solution
+- Add > Add existing project
+- Navigate to the folder “CSFizzBuzz.Library.Tests” and select csproj file with the same name and click open.
+
+Trying running the tests again
