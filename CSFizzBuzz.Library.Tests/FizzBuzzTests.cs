@@ -35,8 +35,8 @@ namespace CSFizzBuzz.Library.tests
         }
 
         [Test]
-        public void FizzBuzz_When5_ReturnsBuzz(
-            [Values(5)] int input)
+        public void FizzBuzz_WhenDivisibleBy5_ReturnsBuzz(
+            [Values(5, 10, 20)] int input)
         {
             string output = FizzBuzz.GetValue(input);
             Assert.AreEqual("Buzz", output);

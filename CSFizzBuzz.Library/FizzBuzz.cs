@@ -10,7 +10,7 @@ namespace CSFizzBuzz.Library
             {
                 return "Fizz";
             }
-            else if (input == 5)
+            else if (input % 5 == 0)
             {
                 return "Buzz";
             }
